@@ -11,6 +11,16 @@
   </head>
 
   <body>
+  <a href="/boards">Bulletin Board</a>
+
+<!--Using FlashMessageHelperMethod to show the user if their input was saved or not-->
+  <hr>
+
+  <div style="color: green"><%= notice %></div>
+
+  <div style="color: red"><%= alert %></div>
+
+
     <%= yield %>
   </body>
 </html>

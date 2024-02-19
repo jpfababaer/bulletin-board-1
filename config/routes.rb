@@ -36,6 +36,9 @@ Rails.application.routes.draw do
 
   # CREATE
   post("/insert_board", { :controller => "boards", :action => "create" })
+
+  #HOMEPAGE
+  get("/" , controller: "boards" , action: "index")
           
   # READ
   get("/boards", { :controller => "boards", :action => "index" })
